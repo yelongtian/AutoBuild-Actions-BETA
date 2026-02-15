@@ -219,9 +219,6 @@ jobs:
         grep -A 5 "define Device/d-team_newifi-d2" target/linux/ramips/image/mt7621.mk | grep "IMAGE_SIZE"
         grep -A 2 'label = "firmware";' target/linux/ramips/dts/mt7621_d-team_newifi-d2.dts
     # ================= 插入部分结束 =================
-
-    - name: Accelerate
-      if: env.CACHE_ACCELERATE == 'true'
       
     - name: Accelerate
       if: env.CACHE_ACCELERATE == 'true'
